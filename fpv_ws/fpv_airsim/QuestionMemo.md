@@ -159,7 +159,7 @@ ament_target_dependencies(pd_position_controller_simple tf2 tf2_ros tf2_geometry
 
 # 跨平台迁移场景工程 （Windows->Linux）
 ## 获取场景工程 (以 CityParkEnvironmentCollec 为例)
-![alt text](image.png)
+![image](https://github.com/QJWDDS/FPV.UAV/blob/main/fpv_ws/fpv_airsim/CityParkEnvironmentCollec.png)
 在 Windows 上打开 Epic Games Launcher，从商城（Marketplace）下载免费的高质量场景（CityParkEnvironmentCollec）。创建一个 UE4.27 的新工程并加载该场景，然后将整个工程文件夹拷贝到 Ubuntu 机器上
 ## 植入 AirSim 插件
 在 CityParkEnvironmentCollec 的根目录下，新建一个名为 Plugins 的文件夹
