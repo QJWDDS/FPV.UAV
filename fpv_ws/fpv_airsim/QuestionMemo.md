@@ -152,7 +152,7 @@ ament_target_dependencies(pd_position_controller_simple tf2 tf2_ros tf2_geometry
 可在终端查看有无 ros2 话题 ``` ros2 topic list``` 和其频率 ```ros2 topic hz 话题名称```
 
 ## 架构运行顺序
-1. **启动 XRCE-DDS 代理并打开QGC地面站：**：```MicroXRCEAgent udp4 -p 8888```
+1. **启动 XRCE-DDS 代理并打开QGC地面站：**```MicroXRCEAgent udp4 -p 8888```
 2. **启动 PX4 SITL：** 在 PX4 源码目录下运行 ```make px4_sitl none_iris```（这会监听 4560 端口等待 AirSim 接入）
 3. **启动 AirSim：** 在 UE 中点击 Play 运行 Blocks 环境 (等待PX4终端提提示：Ready for takeoff! ) 
 4. **启动 AirSim ROS2 Wrapper：** 建立 ROS2 与 AirSim 的图像/状态桥梁 (可用 rqt 工具查看相机画面)
